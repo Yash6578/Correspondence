@@ -2,6 +2,7 @@ package com.ashokit.correspondence.service.impl;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 
 import com.ashokit.correspondence.model.NoticeDetails;
 import com.ashokit.correspondence.service.PdfGeneratorService;
@@ -13,7 +14,10 @@ import com.lowagie.text.Paragraph;
 
 import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.PdfWriter;
+import org.springframework.core.io.InputStreamSource;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PdfGeneratorServiceImpl implements PdfGeneratorService {
 
 	@Override
